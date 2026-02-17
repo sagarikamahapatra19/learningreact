@@ -1,0 +1,49 @@
+  {% load static %}
+  {% include 'header.html' %}
+ <!-- Hero section -->
+  <div class="about-first-container animate-on-scroll">
+        <div class="about-second-container">
+          <h1>Blog</h1>
+          <ol class="lists">
+            <li class="inner-lists"><a href="#">HOME <span>/</span></a></li>
+            <li class="inner-lists"><a href="#">PRICE<span>/</span></a></li>
+            <li class="inner-lists"><a href="#">BLOG</a></li>
+          </ol>
+        </div>
+  </div>
+ <!-- Hero Ends -->
+  <main>
+        <section class="content-row">
+            <div class="card-blog tan">
+                <div class="meta">
+                    <span class="date"><i class="fa-solid fa-calendar-days"></i>SEP 01, 2025 | </span>
+                    <span class="category"><i class="fa-solid fa-folder-open"></i>Hair Salon</span>
+                </div>
+                <h2>How to Extend The Life of Your Haircolor</h2>
+                <p>The Glam Cut Salon is the perfect destination for a stylish transformation, offering expert haircuts, coloring, and modern 
+                  styling.</p>
+                <a href="{% url 'Bookingpage' %}"><button class="read-more2 btn2 btn-primary2 disoff">know More &rarr;</button></a>
+            </div>
+            <div class="card image-card">
+                <img src="{% static 'Images/blog-1.jpg' %}" alt="Salon Image 1">
+            </div>
+            <div class="card-blog tan">
+                <div class="meta">
+                    <span class="date"><i class="fa-solid fa-calendar-days"></i>SEP 01, 2025 | </span>
+                    <span class="category"><i class="fa-solid fa-folder-open"></i>Hair Salon</span>
+                </div>
+                <h2>Hottest Hairstyles and Haircuts in 2025</h2>
+                <p>The Glam Cut Salon offers expert haircuts, stylish hair treatments, and luxurious hair spa services that help you look and 
+                feel your best.</p>
+                <a href="{% url 'Bookingpage' %}"><button class="read-more2 btn2 btn-primary2 disoff">know More &rarr;</button></a>
+            </div>
+            <div class="card image-card">
+                <img src="{% static 'Images/blog-2.jpg' %}" alt="Salon Image 2">
+            </div>
+        </section>
+    </main>
+
+    
+ {% include 'footer.html' %}
+
+     

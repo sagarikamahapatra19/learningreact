@@ -1,0 +1,121 @@
+ {% load static %}
+ {% include 'header.html' %}
+ <!-- Hero section -->
+  <div class="about-first-container animate-on-scroll">
+        <div class="about-second-container">
+          <h1>About Us</h1>
+          <ol class="lists">
+            <li class="inner-lists"><a href="#">HOME <span>/</span></a></li>
+            <li class="inner-lists"><a href="#">SERVICE <span>/</span></a></li>
+            <li class="inner-lists"><a href="#">ABOUT </a></li>
+          </ol>
+        </div>
+  </div>
+ <!-- Hero Ends -->
+ <!-- About Starts -->
+  <section class="animate-on-scroll">
+    <div class="sec1">
+      <div class="img-about"></div>  
+    </div>
+    
+    <div class="sec2">
+        <h1>Meet the Team</h1>
+        <h2>Setting New Standards!</h2>
+        <p>At our beauty parlour, we believe every woman deserves to feel confident, radiant, and truly pampered 
+          with services that not only enhance outer beauty but also revive the soul from within.
+          With years of experience, a passionate team, and a deep understanding of modern beauty trends,
+          we offer personalized care and top-quality treatments to bring out the best version of you.
+        </p>
+        <div class="main-cal">
+          <div class="calender">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h1>25</h1>
+            <p>Years Experience</p>          
+          </div>
+          <div class="calender">
+            <i class="fa-solid fa-users"></i>
+            <h1>999</h1>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!--About Ends  -->
+
+  <!-- Pricing Starts -->
+  <div class="price-container animate-on-scroll">
+    <div class="whole-container">
+      <div class="first-container">
+        <div class="price-details">
+          <h1 class="price-text">Pricing</h1>
+          <h1 class="salon-text">Beauty Salon</h1>
+          <h1 class="uppercase-text">PRICING</h1>
+          <div class="discount-container">
+            <div class="discount">
+              <h4>Enjoy</h4>
+              <h1>20%</h1>
+              <p>OFF</p>
+            </div>
+            <div class="discount-details">
+              <p> Pamper yourself for less! Enjoy our limited-time discounts on haircuts, makeup, manicures, and more. Treat yourself to luxury
+              services without breaking the bank—because beauty should always feel this good and this affordable.
+              </p>
+              <form action="{% url 'Bookingpage' %}" method="get" style="display:inline;">
+                  <button type="submit" class="read-more btn1 btn-primary1 disoff">GET 20% OFF &rarr;</button>
+             </form>
+            </div>           
+          </div>
+        </div>
+      </div>
+      <div class="second-container">
+        <div class="price-boxes">
+          <div class="inner-box1">
+            <img src="{% static 'Images/Haircut.jpg' %}" class="img-boxes">                
+            <div class="makeup-prices">
+             <h6>HAIRCUT</h6>
+             <h4>$49</h4>
+            </div>
+          </div>
+          <div class="inner-box1">
+            <img src="{% static 'Images/Makeup.jpg' %}" class="img-boxes">                
+            <div class="makeup-prices">
+              <h6>MAKEUP</h6>
+              <h4>$79</h4>
+            </div>
+          </div>
+          <div class="inner-box1">
+            <img src="{% static 'Images/Manicure.jpg' %}" class="img-boxes">                
+            <div class="makeup-prices">
+              <h6>MANICURE</h6>
+              <h4>$59</h4>
+            </div>
+          </div>
+          <div class="inner-box1">
+            <img src="{% static 'Images/Pedicure.jpg' %}" class="img-boxes">                
+            <div class="makeup-prices">
+              <h6>PEDICURE</h6>
+              <h4>$39</h4>
+            </div>
+          </div>
+          <div class="inner-box1">
+            <img src="{% static 'Images/Massage.jpg' %}" class="img-boxes">                
+            <div class="makeup-prices">
+              <h6>MASSAGE</h6>
+              <h4>$99</h4>
+            </div>
+          </div>
+          <div class="inner-box1">
+            <img src="{% static 'Images/Skincare.jpg' %}" class="img-boxes">                
+            <div class="makeup-prices">
+              <h6>SKINCARE</h6>
+              <h4>$89</h4>
+            </div>
+          </div>
+        </div>            
+      </div>        
+    </div>
+ </div>
+ <!-- Pricing Ends -->
+
+ {% include 'footer.html' %}
+

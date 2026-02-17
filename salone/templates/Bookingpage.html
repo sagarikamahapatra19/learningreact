@@ -1,0 +1,70 @@
+  {% load static %}
+  {% include 'header.html' %}
+  <!-- Hero section -->
+  <div class="about-first-container animate-on-scroll">
+        <div class="about-second-container">
+          <h1>Appointment</h1>
+          <ol class="lists">
+            <li class="inner-lists"><a href="#">HOME <span>/</span></a></li>
+            <li class="inner-lists"><a href="#">ABOUT <span>/</span></a></li>
+            <li class="inner-lists"><a href="#">BOOKING </a></li>
+          </ol>
+        </div>
+  </div>
+  <!-- Hero Ends -->
+  <!-- Booking Starts -->
+   <div class="whole-bookform">
+   <div class="book-form">
+    <p class="app-head">APPOINTMENT</p>
+    <h1 class="app-title">Make An Appointment To Visit Our Salone </h1>
+    <p class="app-def">The Glam Cut Salone specializes in trendy, elegant haircuts that enhance natural beauty with a touch of sophistication. 
+      Expert stylists provide personalized consultations to create looks that suit each client’s lifestyle and personality. </p>
+     <div class="contact-card app-card">
+        <div class="contact-icon"><i class="fas fa-envelope app-icon"></i></div>
+          <div>
+            <h5>Mail Us</h5>
+            <p>mahapatrasagarika567@gmail.com</p>
+          </div>
+      </div>
+      <div class="contact-card app-card">
+        <div class="contact-icon"><i class="fas fa-phone app-icon"></i></div>
+          <div>
+            <h5>Telephone</h5>
+            <p>+0123456789</p>
+          </div>
+        </div>
+  </div>
+  <!-- Right: Appointment Form -->
+        <section class="appointment-form-wrapper">
+            <form class="appointment-form" method="post" action="{% url 'Bookingpage' %}">
+              {% csrf_token %}
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name" name="name" required>
+                    <input type="email" placeholder="Your Email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Your Mobile" name="phone" required class="items">
+                    <select name="professional" class="options-item">
+                        <option value="" class="options">Choose Professional</option>
+                        <option value="dr1" class="options">Hair Stylist</option>
+                        <option value="dr2"class="options">Nail Artist</option>
+                        <option value="dr3"class="options">Skin Specialist</option>
+                        <option value="dr4"class="options">Makeup Artist</option>
+                        <option value="dr5"class="options">Pedicure Specialist</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <input type="date" placeholder="Choose Date" name="date" required>
+                </div>
+                <div class="form-row">
+                    <textarea placeholder="Describe your problem" name="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="book-btn">Book Appointment</button>
+            </form>
+        </section>
+  </div>
+   <!-- Booking Ends -->
+
+   
+ {% include 'footer.html' %}
+

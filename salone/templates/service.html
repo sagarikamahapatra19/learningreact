@@ -1,0 +1,95 @@
+ {% load static %}
+ {% include 'header.html' %}
+  <!-- Hero section -->
+  <div class="about-first-container animate-on-scroll">
+        <div class="about-second-container">
+          <h1>Service</h1>
+          <ol class="lists">
+            <li class="inner-lists"><a href="#">HOME <span>/</span></a></li>
+            <li class="inner-lists"><a href="#">ABOUT <span>/</span></a></li>
+            <li class="inner-lists"><a href="#">SERVICE </a></li>
+          </ol>
+        </div>
+  </div>
+  <!-- Hero Ends -->
+
+   <!-- Service Starts -->
+  <div class="container-service animate-on-scroll">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="text-service">Our Services</h1>
+        <h1 class="explore-service">Explore Our Services</h1>
+      </div>
+      <section class="services-grid">
+        <div class="service-box">
+          <img src="{% static 'Images/haircut.png' %}" alt="">
+          <h2>Haircut</h2>
+          <p>Step into our salon and expert haircuts tailored just for you. Our talented stylists listen to your
+          preferences and transform your look with care.
+          </p>
+          <form action="{% url 'BeautyBlog' %}" method="get" style="display:inline;">
+           <button type="submit" class="read-more btn1 btn-primary1 disoff">Know More &rarr;</button>
+          </form>
+        </div>
+        <div class="service-box">
+          <img src="{% static 'Images/makeup.png' %}" alt="">
+          <h2>Makeup</h2>
+          <p>Enhance your natural beauty with our professional makeup services. Our artists use top-quality products
+          to create looks for every occasion. 
+          </p>
+          <form action="{% url 'BeautyBlog' %}" method="get" style="display:inline;">
+           <button type="submit" class="read-more btn1 btn-primary1 disoff">Know More &rarr;</button>
+         </form>
+
+        </div>
+        <div class="service-box">
+          <img src="{% static 'Images/manicure.png' %}" alt="">
+          <h2>Manicure</h2>
+          <p>From classic elegance to trendy designs, our manicures are tailored to suit your style. Let your hands
+          make a beautiful impression wherever you go.
+          </p>
+          <form action="{% url 'BeautyBlog' %}" method="get" style="display:inline;">
+            <button type="submit" class="read-more btn1 btn-primary1 disoff">Know More &rarr;</button>
+          </form>
+
+        </div>
+        <div class="service-box">
+          <img src="{% static 'Images/pedicure.png' %}" alt="">
+          <h2>Pedicure</h2>
+          <p>Experience the luxury of a refreshing pedicure—revitalize tired feet, maintain healthy nails, and choose
+          from a range of stylish colors.
+          </p>
+         <form action="{% url 'BeautyBlog' %}" method="get" style="display:inline;">
+           <button type="submit" class="read-more btn1 btn-primary1 disoff">Know More &rarr;</button>
+         </form>
+
+        </div>
+        <div class="service-box">
+          <img src="{% static 'Images/massage.png' %}" alt="">
+          <h2>Massage</h2>
+          <p>Unwind with our soothing massage therapies. Our skilled professionals melt away stress and 
+          tension, leaving you refreshed from head to toe.
+          </p>
+          <form action="{% url 'BeautyBlog' %}" method="get" style="display:inline;">
+           <button type="submit" class="read-more btn1 btn-primary1 disoff">Know More &rarr;</button>
+         </form>
+ 
+        </div>
+        <div class="service-box">
+          <img src="{% static 'Images/skin-care.png' %}" alt="">
+          <h2>Skin Care</h2>
+          <p>Experience personalized skincare designed to refresh and protect your skin. Our expert care helps you achieve a 
+          glowing complexion you'll love.
+          </p>
+          <form action="{% url 'BeautyBlog' %}" method="get" style="display:inline;">
+           <button type="submit" class="read-more btn1 btn-primary1 disoff">Know More &rarr;</button>
+          </form>
+
+        </div>
+      </section>
+    </div>
+  </div>
+ <!-- Service Ends -->
+
+
+ {% include 'footer.html' %}

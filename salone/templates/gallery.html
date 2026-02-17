@@ -1,0 +1,66 @@
+ {% load static %}
+ {% include 'header.html' %}
+    <!-- Hero section -->
+  <div class="about-first-container animate-on-scroll">
+        <div class="about-second-container">
+          <h1>Our Gallery</h1>
+          <ol class="lists">
+            <li class="inner-lists"><a href="#">HOME <span>/</span></a></li>
+            <li class="inner-lists"><a href="#">SERVICE <span>/</span></a></li>
+            <li class="inner-lists"><a href="#">GALLERY </a></li>
+          </ol>
+        </div>
+  </div>
+  <!-- Hero Ends -->
+
+   <!-- Gallery Starts -->
+ <div class="container-gallery animate-on-scroll">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="text-service">Gallery</h1>
+        <h1 class="explore-service">Explore Our Gallery</h1>
+      </div>
+      <div class="gallery-track">
+       <div class="gallery-item">
+          <img src="{% static 'Images/gallery-1.jpg' %}" alt="Hair Styling Session">
+          <div class="overlay">
+            <a href="{% static 'Images/gallery-1.jpg' %}"><span class="icon btn btn-primary">&#128065;</span></a>
+          </div>
+       </div>
+       <div class="gallery-item">
+          <img src="{% static 'Images/gallery-2.jpg' %}" alt="Blow Dryer">
+          <div class="overlay">
+            <a href="{% static 'Images/gallery-2.jpg' %}"><span class="icon btn btn-primary">&#128065;</span></a>
+          </div>
+       </div>
+       <div class="gallery-item">
+         <img src="{% static 'Images/gallery-3.jpg' %}" alt="Curling Hair">
+         <div class="overlay">
+           <a href="{% static 'Images/gallery-3.jpg' %}"><span class="icon btn btn-primary">&#128065;</span></a>
+         </div>
+       </div>
+       <div class="gallery-item">
+         <img src="{% static 'Images/gallery-4.jpg' %}" alt="Hair Coloring">
+         <div class="overlay">
+           <a href="{% static 'Images/gallery-4.jpg' %}"><span class="icon btn btn-primary">&#128065;</span></a>
+         </div>
+       </div>
+       <div class="gallery-item">
+         <img src="{% static 'Images/gallery-5.jpg' %}" alt="Customer Service">
+         <div class="overlay">
+            <a href="{% static 'Images/gallery-5.jpg' %}"><span class="icon btn btn-primary">&#128065;</span></a>
+         </div>
+       </div>
+       <div class="gallery-item">
+         <img src="{% static 'Images/gallery-6.jpg' %}" alt="Hair Styling">
+         <div class="overlay">
+            <a href="{% static 'Images/gallery-6.jpg' %}"><span class="icon btn btn-primary">&#128065;</span></a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- Gallery Ends -->
+
+ 
+ {% include 'footer.html' %}
